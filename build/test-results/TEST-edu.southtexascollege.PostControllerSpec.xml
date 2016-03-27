@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.PostControllerSpec" tests="11" skipped="0" failures="8" errors="0" timestamp="2016-03-27T00:53:40" hostname="storm.local" time="0.662">
+  <properties/>
+  <testcase name="Test the index action returns the correct model" classname="edu.southtexascollege.PostControllerSpec" time="0.364">
+    <failure message="Condition not satisfied:&#10;&#10;model.postCount == 0&#10;|     |         |&#10;[:]   null      false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+model.postCount == 0
+|     |         |
+[:]   null      false
+
+	at edu.southtexascollege.PostControllerSpec.Test the index action returns the correct model(PostControllerSpec.groovy:26)
+</failure>
+  </testcase>
+  <testcase name="Adding a valid new post to the timeline" classname="edu.southtexascollege.PostControllerSpec" time="0.142">
+    <failure message="org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: edu.southtexascollege.PostControllerSpec.￼￼() is applicable for argument types: (java.lang.Boolean) values: [false]&#10;Possible solutions: is(java.lang.Object), Spy(), any(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.util.Map)" type="org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack">org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: edu.southtexascollege.PostControllerSpec.￼￼() is applicable for argument types: (java.lang.Boolean) values: [false]
+Possible solutions: is(java.lang.Object), Spy(), any(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.util.Map)
+</failure>
+  </testcase>
+  <testcase name="Test the create action returns the correct model" classname="edu.southtexascollege.PostControllerSpec" time="0.059"/>
+  <testcase name="Test the save action correctly persists an instance" classname="edu.southtexascollege.PostControllerSpec" time="0.023">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.save() is applicable for argument types: (edu.southtexascollege.Post) values: [edu.southtexascollege.Post : (unsaved)]&#10;Possible solutions: save(), wait(), show(), any(), wait(long), each(groovy.lang.Closure)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.save() is applicable for argument types: (edu.southtexascollege.Post) values: [edu.southtexascollege.Post : (unsaved)]
+Possible solutions: save(), wait(), show(), any(), wait(long), each(groovy.lang.Closure)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test the save action correctly persists an instance(PostControllerSpec.groovy:58)
+</failure>
+  </testcase>
+  <testcase name="Test that the show action returns the correct model" classname="edu.southtexascollege.PostControllerSpec" time="0.009">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.show() is applicable for argument types: (null) values: [null]&#10;Possible solutions: show(), save(), wait(), edit(), find(), any()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: show(), save(), wait(), edit(), find(), any()
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test that the show action returns the correct model(PostControllerSpec.groovy:79)
+</failure>
+  </testcase>
+  <testcase name="Test that the edit action returns the correct model" classname="edu.southtexascollege.PostControllerSpec" time="0.01">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.edit() is applicable for argument types: (null) values: [null]&#10;Possible solutions: edit(), wait(), wait(long), delete(), wait(long, int), getAt(java.lang.String)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: edit(), wait(), wait(long), delete(), wait(long, int), getAt(java.lang.String)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test that the edit action returns the correct model(PostControllerSpec.groovy:95)
+</failure>
+  </testcase>
+  <testcase name="Test the update action performs an update on a valid domain instance" classname="edu.southtexascollege.PostControllerSpec" time="0.011">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.update() is applicable for argument types: (null) values: [null]&#10;Possible solutions: update(), create(), delete(), edit(), patch(), save()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: update(), create(), delete(), edit(), patch(), save()
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test the update action performs an update on a valid domain instance(PostControllerSpec.groovy:113)
+</failure>
+  </testcase>
+  <testcase name="Test that the delete action deletes an instance if it exists" classname="edu.southtexascollege.PostControllerSpec" time="0.012">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.delete() is applicable for argument types: (null) values: [null]&#10;Possible solutions: delete(), edit(), create(), update(), every(), sleep(long)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: delete(), edit(), create(), update(), every(), sleep(long)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test that the delete action deletes an instance if it exists(PostControllerSpec.groovy:145)
+</failure>
+  </testcase>
+  <testcase name="Testing id of joe_cool redirects to /post/timeline/joe_cool" classname="edu.southtexascollege.PostControllerSpec" time="0.009"/>
+  <testcase name="Testing id of null redirects to /post/timeline/chuck_norris" classname="edu.southtexascollege.PostControllerSpec" time="0.009"/>
+  <testcase name="Exercising security filter for unauthenticated user" classname="edu.southtexascollege.PostControllerSpec" time="0.01">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostControllerSpec.withFilters() is applicable for argument types: (java.util.LinkedHashMap, edu.southtexascollege.PostControllerSpec$__spock_feature_0_9_closure1) values: [[action:addPost], edu.southtexascollege.PostControllerSpec$__spock_feature_0_9_closure1@49102954]" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostControllerSpec.withFilters() is applicable for argument types: (java.util.LinkedHashMap, edu.southtexascollege.PostControllerSpec$__spock_feature_0_9_closure1) values: [[action:addPost], edu.southtexascollege.PostControllerSpec$__spock_feature_0_9_closure1@49102954]
+	at edu.southtexascollege.PostControllerSpec.Exercising security filter for unauthenticated user(PostControllerSpec.groovy:188)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

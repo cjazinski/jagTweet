@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.UserIntegrationSpec" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-03-26T22:19:57" hostname="storm.local" time="0.106">
+  <properties/>
+  <testcase name="Saving first user to the database" classname="edu.southtexascollege.UserIntegrationSpec" time="0.013"/>
+  <testcase name="Updating a saved user changes its properties" classname="edu.southtexascollege.UserIntegrationSpec" time="0.006"/>
+  <testcase name="Deleting a user removes it from the database" classname="edu.southtexascollege.UserIntegrationSpec" time="0.011"/>
+  <testcase name="Saving a user with invalid properties causes an error to occur" classname="edu.southtexascollege.UserIntegrationSpec" time="0.062"/>
+  <testcase name="Recoving from a failed save attempt by fixing the properties" classname="edu.southtexascollege.UserIntegrationSpec" time="0.006"/>
+  <testcase name="Ensure a user can follow other users" classname="edu.southtexascollege.UserIntegrationSpec" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

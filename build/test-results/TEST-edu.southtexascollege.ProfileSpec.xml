@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.ProfileSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2016-03-26T22:16:25" hostname="storm.local" time="0.089">
+  <properties/>
+  <testcase name="test something" classname="edu.southtexascollege.ProfileSpec" time="0.089">
+    <failure message="Condition not satisfied:&#10;&#10;true == false&#10;     |&#10;     false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+true == false
+     |
+     false
+
+	at edu.southtexascollege.ProfileSpec.test something(ProfileSpec.groovy:20)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

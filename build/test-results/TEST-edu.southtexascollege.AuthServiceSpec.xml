@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.AuthServiceSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2016-03-27T00:53:38" hostname="storm.local" time="1.292">
+  <properties/>
+  <testcase name="test something" classname="edu.southtexascollege.AuthServiceSpec" time="1.292">
+    <failure message="Condition not satisfied:&#10;&#10;true == false&#10;     |&#10;     false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+true == false
+     |
+     false
+
+	at edu.southtexascollege.AuthServiceSpec.test something(AuthServiceSpec.groovy:20)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

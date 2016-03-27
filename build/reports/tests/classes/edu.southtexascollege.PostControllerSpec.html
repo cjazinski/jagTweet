@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class edu.southtexascollege.PostControllerSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class edu.southtexascollege.PostControllerSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.southtexascollege.html">edu.southtexascollege</a> &gt; PostControllerSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">8</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.658s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">27%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Adding a valid new post to the timeline"></a>
+<h3 class="failures">Adding a valid new post to the timeline</h3>
+<span class="code">
+<pre>org.codehaus.groovy.runtime.metaclass.MissingMethodExceptionNoStack: No signature of method: edu.southtexascollege.PostControllerSpec.￼￼() is applicable for argument types: (java.lang.Boolean) values: [false]
+Possible solutions: is(java.lang.Object), Spy(), any(), Spy(groovy.lang.Closure), Spy(java.lang.Class), Spy(java.util.Map)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Exercising security filter for unauthenticated user"></a>
+<h3 class="failures">Exercising security filter for unauthenticated user</h3>
+<span class="code">
+<pre>groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostControllerSpec.withFilters() is applicable for argument types: (java.util.LinkedHashMap, edu.southtexascollege.PostControllerSpec$__spock_feature_0_9_closure1) values: [[action:addPost], edu.southtexascollege.PostControllerSpec$__spock_feature_0_9_closure1@49102954]
+	at edu.southtexascollege.PostControllerSpec.Exercising security filter for unauthenticated user(PostControllerSpec.groovy:188)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test that the delete action deletes an instance if it exists"></a>
+<h3 class="failures">Test that the delete action deletes an instance if it exists</h3>
+<span class="code">
+<pre>groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: delete(), edit(), create(), update(), every(), sleep(long)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test that the delete action deletes an instance if it exists(PostControllerSpec.groovy:145)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test that the edit action returns the correct model"></a>
+<h3 class="failures">Test that the edit action returns the correct model</h3>
+<span class="code">
+<pre>groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: edit(), wait(), wait(long), delete(), wait(long, int), getAt(java.lang.String)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test that the edit action returns the correct model(PostControllerSpec.groovy:95)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test that the show action returns the correct model"></a>
+<h3 class="failures">Test that the show action returns the correct model</h3>
+<span class="code">
+<pre>groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: show(), save(), wait(), edit(), find(), any()
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test that the show action returns the correct model(PostControllerSpec.groovy:79)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test the index action returns the correct model"></a>
+<h3 class="failures">Test the index action returns the correct model</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+model.postCount == 0
+|     |         |
+[:]   null      false
+
+	at edu.southtexascollege.PostControllerSpec.Test the index action returns the correct model(PostControllerSpec.groovy:26)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test the save action correctly persists an instance"></a>
+<h3 class="failures">Test the save action correctly persists an instance</h3>
+<span class="code">
+<pre>groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.save() is applicable for argument types: (edu.southtexascollege.Post) values: [edu.southtexascollege.Post : (unsaved)]
+Possible solutions: save(), wait(), show(), any(), wait(long), each(groovy.lang.Closure)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test the save action correctly persists an instance(PostControllerSpec.groovy:58)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Test the update action performs an update on a valid domain instance"></a>
+<h3 class="failures">Test the update action performs an update on a valid domain instance</h3>
+<span class="code">
+<pre>groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.PostController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: update(), create(), delete(), edit(), patch(), save()
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.PostControllerSpec.Test the update action performs an update on a valid domain instance(PostControllerSpec.groovy:113)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Adding a valid new post to the timeline</td>
+<td>0.142s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Exercising security filter for unauthenticated user</td>
+<td>0.010s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test that the delete action deletes an instance if it exists</td>
+<td>0.012s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test that the edit action returns the correct model</td>
+<td>0.010s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test that the show action returns the correct model</td>
+<td>0.009s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Test the create action returns the correct model</td>
+<td>0.059s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Test the index action returns the correct model</td>
+<td>0.364s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test the save action correctly persists an instance</td>
+<td>0.023s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Test the update action performs an update on a valid domain instance</td>
+<td>0.011s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Testing id of joe_cool redirects to /post/timeline/joe_cool</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing id of null redirects to /post/timeline/chuck_norris</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.9</a> at Mar 26, 2016 7:53:42 PM</p>
+</div>
+</div>
+</body>
+</html>

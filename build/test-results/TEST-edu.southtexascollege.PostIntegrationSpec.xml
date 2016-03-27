@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.PostIntegrationSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-03-26T22:19:50" hostname="storm.local" time="6.736">
+  <properties/>
+  <testcase name="Adding posts to user links post to user" classname="edu.southtexascollege.PostIntegrationSpec" time="6.719"/>
+  <testcase name="Ensure posts linked to a user can be retrieved" classname="edu.southtexascollege.PostIntegrationSpec" time="0.009"/>
+  <testcase name="Exercise tagging several posts with various tags" classname="edu.southtexascollege.PostIntegrationSpec" time="0.008"/>
+  <system-out><![CDATA[Creating admin user
+Fresh Database. Creating ADMIN user.
+Creating sample data
+Grails application running at http://localhost:8080 in environment: test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

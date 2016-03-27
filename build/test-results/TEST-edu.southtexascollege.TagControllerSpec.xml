@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.TagControllerSpec" tests="7" skipped="0" failures="5" errors="0" timestamp="2016-03-27T00:53:42" hostname="storm.local" time="0.197">
+  <properties/>
+  <testcase name="Test the index action returns the correct model" classname="edu.southtexascollege.TagControllerSpec" time="0.165"/>
+  <testcase name="Test the create action returns the correct model" classname="edu.southtexascollege.TagControllerSpec" time="0.006"/>
+  <testcase name="Test the save action correctly persists an instance" classname="edu.southtexascollege.TagControllerSpec" time="0.006">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.save() is applicable for argument types: (edu.southtexascollege.Tag) values: [edu.southtexascollege.Tag : (unsaved)]&#10;Possible solutions: save(), wait(), show(), any(), wait(long), each(groovy.lang.Closure)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.save() is applicable for argument types: (edu.southtexascollege.Tag) values: [edu.southtexascollege.Tag : (unsaved)]
+Possible solutions: save(), wait(), show(), any(), wait(long), each(groovy.lang.Closure)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.TagControllerSpec.Test the save action correctly persists an instance(TagControllerSpec.groovy:43)
+</failure>
+  </testcase>
+  <testcase name="Test that the show action returns the correct model" classname="edu.southtexascollege.TagControllerSpec" time="0.004">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.show() is applicable for argument types: (null) values: [null]&#10;Possible solutions: show(), save(), wait(), edit(), find(), any()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: show(), save(), wait(), edit(), find(), any()
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.TagControllerSpec.Test that the show action returns the correct model(TagControllerSpec.groovy:64)
+</failure>
+  </testcase>
+  <testcase name="Test that the edit action returns the correct model" classname="edu.southtexascollege.TagControllerSpec" time="0.004">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.edit() is applicable for argument types: (null) values: [null]&#10;Possible solutions: edit(), wait(), wait(long), delete(), wait(long, int), getAt(java.lang.String)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: edit(), wait(), wait(long), delete(), wait(long, int), getAt(java.lang.String)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.TagControllerSpec.Test that the edit action returns the correct model(TagControllerSpec.groovy:80)
+</failure>
+  </testcase>
+  <testcase name="Test the update action performs an update on a valid domain instance" classname="edu.southtexascollege.TagControllerSpec" time="0.007">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.update() is applicable for argument types: (null) values: [null]&#10;Possible solutions: update(), create(), delete(), edit(), patch(), save()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: update(), create(), delete(), edit(), patch(), save()
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.TagControllerSpec.Test the update action performs an update on a valid domain instance(TagControllerSpec.groovy:98)
+</failure>
+  </testcase>
+  <testcase name="Test that the delete action deletes an instance if it exists" classname="edu.southtexascollege.TagControllerSpec" time="0.005">
+    <failure message="groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.delete() is applicable for argument types: (null) values: [null]&#10;Possible solutions: delete(), edit(), create(), update(), every(), sleep(long)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: edu.southtexascollege.TagController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: delete(), edit(), create(), update(), every(), sleep(long)
+	at grails.artefact.gsp.TagLibraryInvoker$Trait$Helper.methodMissing(TagLibraryInvoker.groovy:92)
+	at edu.southtexascollege.TagControllerSpec.Test that the delete action deletes an instance if it exists(TagControllerSpec.groovy:130)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

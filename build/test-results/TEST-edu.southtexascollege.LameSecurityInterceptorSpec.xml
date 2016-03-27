@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.LameSecurityInterceptorSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2016-03-27T00:53:40" hostname="storm.local" time="0.175">
+  <properties/>
+  <testcase name="Test lameSecurity interceptor matching" classname="edu.southtexascollege.LameSecurityInterceptorSpec" time="0.175">
+    <failure message="Condition not satisfied:&#10;&#10;interceptor.doesMatch()&#10;|           |&#10;|           false&#10;edu.southtexascollege.LameSecurityInterceptor@181171e0&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+interceptor.doesMatch()
+|           |
+|           false
+edu.southtexascollege.LameSecurityInterceptor@181171e0
+
+	at edu.southtexascollege.LameSecurityInterceptorSpec.Test lameSecurity interceptor matching(LameSecurityInterceptorSpec.groovy:25)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

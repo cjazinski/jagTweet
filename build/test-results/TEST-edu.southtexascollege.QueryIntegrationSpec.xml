@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.QueryIntegrationSpec" tests="5" skipped="0" failures="1" errors="0" timestamp="2016-03-26T22:19:57" hostname="storm.local" time="0.094">
+  <properties/>
+  <testcase name="Simple property comparison" classname="edu.southtexascollege.QueryIntegrationSpec" time="0.035"/>
+  <testcase name="Multiple criteria" classname="edu.southtexascollege.QueryIntegrationSpec" time="0.009"/>
+  <testcase name="Query on association" classname="edu.southtexascollege.QueryIntegrationSpec" time="0.025"/>
+  <testcase name="Query against a range value" classname="edu.southtexascollege.QueryIntegrationSpec" time="0.02">
+    <failure message="Condition not satisfied:&#10;&#10;users*.username == [&quot;phil&quot;, &quot;peter&quot;, &quot;glen&quot;, &quot;frankie&quot;, &quot;chuck_norris&quot;, &quot;admin&quot;, &quot;cjazinski&quot;]&#10;|      |        |&#10;|      |        false&#10;|      [phil, peter, glen, frankie, cjazinski, chuck_norris, admin]&#10;[phil, peter, glen, frankie, cjazinski, chuck_norris, admin]&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+users*.username == [&quot;phil&quot;, &quot;peter&quot;, &quot;glen&quot;, &quot;frankie&quot;, &quot;chuck_norris&quot;, &quot;admin&quot;, &quot;cjazinski&quot;]
+|      |        |
+|      |        false
+|      [phil, peter, glen, frankie, cjazinski, chuck_norris, admin]
+[phil, peter, glen, frankie, cjazinski, chuck_norris, admin]
+
+	at edu.southtexascollege.QueryIntegrationSpec.$tt__$spock_feature_0_3(QueryIntegrationSpec.groovy:52)
+	at edu.southtexascollege.QueryIntegrationSpec.Query against a range value_closure4(QueryIntegrationSpec.groovy)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at grails.transaction.GrailsTransactionTemplate$1.doInTransaction(GrailsTransactionTemplate.groovy:70)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at grails.transaction.GrailsTransactionTemplate.executeAndRollback(GrailsTransactionTemplate.groovy:67)
+	at edu.southtexascollege.QueryIntegrationSpec.Query against a range value(QueryIntegrationSpec.groovy)
+</failure>
+  </testcase>
+  <testcase name="Retrieve a single instance" classname="edu.southtexascollege.QueryIntegrationSpec" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

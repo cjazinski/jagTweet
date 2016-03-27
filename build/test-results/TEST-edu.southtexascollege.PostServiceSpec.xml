@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.PostServiceSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-03-27T00:53:41" hostname="storm.local" time="0.26">
+  <properties/>
+  <testcase name="Valid posts get saved and added to the user" classname="edu.southtexascollege.PostServiceSpec" time="0.26"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

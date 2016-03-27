@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.southtexascollege.UserControllerSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-03-27T00:53:42" hostname="storm.local" time="0.216">
+  <properties/>
+  <testcase name="Registering a user with known good parameters" classname="edu.southtexascollege.UserControllerSpec" time="0.162"/>
+  <testcase name="Registration command object for glen validate correctly" classname="edu.southtexascollege.UserControllerSpec" time="0.022"/>
+  <testcase name="Registration command object for peter validate correctly" classname="edu.southtexascollege.UserControllerSpec" time="0.006"/>
+  <testcase name="Registration command object for a validate correctly" classname="edu.southtexascollege.UserControllerSpec" time="0.005"/>
+  <testcase name="Invoking the new register action via a command object" classname="edu.southtexascollege.UserControllerSpec" time="0.02"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
