@@ -8,10 +8,12 @@ buildscript {
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
-        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.5.0"
         classpath "org.grails.plugins:hibernate4:5.0.0"
+        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.7.0"
     }
 }
+
+
 
 version "0.1"
 group "jagtweet"
@@ -55,12 +57,14 @@ dependencies {
     console "org.grails:grails-console"
     compile 'org.grails.plugins:ajax-tags:1.0.0.RC1'
     profile "org.grails.profiles:web:3.1.0"
-    runtime "org.grails.plugins:asset-pipeline"
+    compile 'org.grails.plugins:asset-pipeline:3.0.10'
+    compile 'com.bertramlabs.plugins:sass-asset-pipeline:2.7.0'
     runtime "com.h2database:h2"
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+
 }
 
 task wrapper(type: Wrapper) {
@@ -70,4 +74,5 @@ task wrapper(type: Wrapper) {
 assets {
     minifyJs = true
     minifyCss = true
+    from "/scss"
 }

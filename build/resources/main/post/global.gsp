@@ -30,15 +30,21 @@
 </g:javascript>
     </head>
     <body>
-        <h1>Global Timeline</h1>
 
-        <g:if test="${flash.message}">
-            <div class="flash">
-                ${flash.message}
-            </div>
-        </g:if>
+<div class="row column small-12">
+<g:if test="${flash.message}">
+    <div class="alert callout" data-closable>
+        ${flash.message}
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</g:if>
+</div>
+<div class="row column small-12"> 
+    <h1>Global Timeline</h1>
         
-        <g:if test="${session.user}">
+    <g:if test="${session.user}">
         <div id="newPost">
             <h3>What is ${session.user.profile.fullName} hacking on right now?</h3>
             <p>
@@ -70,6 +76,7 @@
         <div id="allPosts">
             <g:render template="postEntry" collection="${posts}" var="post"/>
         </div>
-        <g:paginate action="global" total="${postCount}" max="10"/>
+        <g:paginate action="global" total="${postCount}" max="10" class="pagination"/>
+</div>
     </body>
 </html>

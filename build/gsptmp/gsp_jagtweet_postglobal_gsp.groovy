@@ -6,7 +6,7 @@ import org.grails.taglib.GrailsTagException
 import org.springframework.web.util.*
 import grails.util.GrailsUtil
 
-class gsp_jagtweet_postglobal_gsp extends GroovyPage {
+class gsp_jagTweet_postglobal_gsp extends GroovyPage {
 public String getGroovyPageFileName() { "/WEB-INF/grails-app/views/post/global.gsp" }
 public Object run() {
 Writer out = getOut()
@@ -43,40 +43,40 @@ expressionOut.print(session.user.profile.fullName)
 printHtmlPart(12)
 createTagBody(3, {->
 printHtmlPart(13)
-invokeTag('textArea','g',46,['id':("postContent"),'name':("content"),'rows':("3"),'cols':("50")],-1)
+invokeTag('textArea','g',52,['id':("postContent"),'name':("content"),'rows':("3"),'cols':("50")],-1)
 printHtmlPart(14)
-invokeTag('submitToRemote','g',52,['value':("Post"),'url':([controller: 'post', action: 'addPostAjax']),'update':("allPosts"),'onSuccess':("clearPost(data)"),'onLoading':("showSpinner(true)"),'onComplete':("showSpinner(false)")],-1)
+invokeTag('submitToRemote','g',58,['value':("Post"),'url':([controller: 'post', action: 'addPostAjax']),'update':("allPosts"),'onSuccess':("clearPost(data)"),'onLoading':("showSpinner(true)"),'onComplete':("showSpinner(false)")],-1)
 printHtmlPart(15)
-invokeTag('image','asset',57,['src':("spinner.gif"),'id':("spinner"),'style':("display:none;")],-1)
+invokeTag('image','asset',63,['src':("spinner.gif"),'id':("spinner"),'style':("display:none;")],-1)
 printHtmlPart(16)
 })
-invokeTag('form','g',58,[:],3)
+invokeTag('form','g',64,[:],3)
 printHtmlPart(17)
 createTagBody(3, {->
 printHtmlPart(18)
-invokeTag('textField','g',62,['name':("fullUrl")],-1)
+invokeTag('textField','g',68,['name':("fullUrl")],-1)
 printHtmlPart(19)
-invokeTag('submitButton','g',63,['name':("submit"),'value':("Make Tiny")],-1)
+invokeTag('submitButton','g',69,['name':("submit"),'value':("Make Tiny")],-1)
 printHtmlPart(20)
 })
-invokeTag('formRemote','g',64,['name':("tinyUrlForm"),'url':([action: 'tinyUrl']),'onSuccess':("addTinyUrl(data);")],3)
+invokeTag('formRemote','g',70,['name':("tinyUrlForm"),'url':([action: 'tinyUrl']),'onSuccess':("addTinyUrl(data);")],3)
 printHtmlPart(21)
 }
 printHtmlPart(22)
-invokeTag('render','g',71,['template':("postEntry"),'collection':(posts),'var':("post")],-1)
+invokeTag('render','g',77,['template':("postEntry"),'collection':(posts),'var':("post")],-1)
 printHtmlPart(23)
-invokeTag('paginate','g',73,['action':("global"),'total':(postCount),'max':("10")],-1)
-printHtmlPart(6)
-})
-invokeTag('captureBody','sitemesh',74,[:],1)
+invokeTag('paginate','g',79,['action':("global"),'total':(postCount),'max':("10"),'class':("pagination")],-1)
 printHtmlPart(24)
+})
+invokeTag('captureBody','sitemesh',81,[:],1)
+printHtmlPart(25)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1459048058000L
+public static final long LAST_MODIFIED = 1459560101000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'

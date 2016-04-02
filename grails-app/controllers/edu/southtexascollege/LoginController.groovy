@@ -19,4 +19,15 @@ class LoginController {
 			redirect(action:'form')
 		}
 	}
+
+	def logOut() {
+		if (session.user) {
+			session['user'] = null
+			flash.message = "You have been logged out!"
+			redirect(uri:'/')
+		} else {
+			flash.message = "You are not logged in!"
+			redirect(uri:'/')
+		}
+	}
 }

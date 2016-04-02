@@ -4,12 +4,18 @@
     <meta name="layout" content="main">
 </head>
 <body>
+<div class="row columns small-12">
+<g:if test="${flash.message}">
+    <div class="alert callout" data-closable>
+        ${flash.message}
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</g:if>
+</div>  
+<div class="row column small-6 large-centered">
     <h1>Sign in</h1>
-    <g:if test="${flash.message}">
-        <div class="flash">
-            ${flash.message}
-        </div>
-    </g:if>
     <g:form action="signIn">
         <fieldset class="form">
             <div class="fieldcontain required">
@@ -22,9 +28,9 @@
             </div>
         </fieldset>
         <fieldset class="buttons">
-            <g:submitButton name="signIn" value="Sign in"/>
+            <g:submitButton name="signIn" value="Sign in" class="expanded button"/>
         </fieldset>
     </g:form>
-
+</div>
 </body>
 </html>

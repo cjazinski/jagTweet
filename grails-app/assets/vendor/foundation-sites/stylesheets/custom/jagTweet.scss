@@ -1,0 +1,35 @@
+header {
+	padding: 1em;
+}
+
+main  {
+	padding: 1em;
+}
+
+footer {
+	background-color: $STC-purple;
+	padding: 0.75em;
+	text-align: center;
+	color: white;
+	ul {
+		list-style-type: none;
+		li {
+			display: inline;
+			a {
+				color: white;
+			}
+		}
+	}
+
+}
+
+.stc-top-bar {
+	@include top-bar-container;
+	background-color: $STC-purple !important;
+	ul {
+		background-color: $STC-purple;
+		a {
+			color: white;
+		}
+	}
+}

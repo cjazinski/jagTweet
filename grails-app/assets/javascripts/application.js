@@ -6,16 +6,12 @@
 // to create separate JavaScript files as needed.
 //
 //= require jquery-2.2.0.min
-//= require bootstrap
-//= require_tree .
+//= require motion-ui/motion-ui
+//= require foundation-sites/javascripts/foundation
 //= require_self
 
 if (typeof jQuery !== 'undefined') {
     (function($) {
-        $('#spinner').ajaxStart(function() {
-            $(this).fadeIn();
-        }).ajaxStop(function() {
-            $(this).fadeOut();
-        });
+       //Docuemnt.ready()
     })(jQuery);
 }

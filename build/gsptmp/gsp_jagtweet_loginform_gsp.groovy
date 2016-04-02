@@ -6,7 +6,7 @@ import org.grails.taglib.GrailsTagException
 import org.springframework.web.util.*
 import grails.util.GrailsUtil
 
-class gsp_jagtweet_loginform_gsp extends GroovyPage {
+class gsp_jagTweet_loginform_gsp extends GroovyPage {
 public String getGroovyPageFileName() { "/WEB-INF/grails-app/views/login/form.gsp" }
 public Object run() {
 Writer out = getOut()
@@ -33,28 +33,28 @@ printHtmlPart(5)
 expressionOut.print(flash.message)
 printHtmlPart(6)
 }
-printHtmlPart(1)
-createTagBody(2, {->
 printHtmlPart(7)
-invokeTag('textField','g',17,['name':("username"),'value':(username)],-1)
+createTagBody(2, {->
 printHtmlPart(8)
-invokeTag('passwordField','g',21,['name':("password")],-1)
+invokeTag('textField','g',23,['name':("username"),'value':(username)],-1)
 printHtmlPart(9)
-invokeTag('submitButton','g',25,['name':("signIn"),'value':("Sign in")],-1)
+invokeTag('passwordField','g',27,['name':("password")],-1)
 printHtmlPart(10)
-})
-invokeTag('form','g',27,['action':("signIn")],2)
+invokeTag('submitButton','g',31,['name':("signIn"),'value':("Sign in"),'class':("expanded button")],-1)
 printHtmlPart(11)
 })
-invokeTag('captureBody','sitemesh',29,[:],1)
+invokeTag('form','g',33,['action':("signIn")],2)
 printHtmlPart(12)
+})
+invokeTag('captureBody','sitemesh',35,[:],1)
+printHtmlPart(13)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1459041033000L
+public static final long LAST_MODIFIED = 1459558530000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'

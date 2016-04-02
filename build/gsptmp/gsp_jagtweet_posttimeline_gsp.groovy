@@ -6,7 +6,7 @@ import org.grails.taglib.GrailsTagException
 import org.springframework.web.util.*
 import grails.util.GrailsUtil
 
-class gsp_jagtweet_posttimeline_gsp extends GroovyPage {
+class gsp_jagTweet_posttimeline_gsp extends GroovyPage {
 public String getGroovyPageFileName() { "/WEB-INF/grails-app/views/post/timeline.gsp" }
 public Object run() {
 Writer out = getOut()
@@ -51,7 +51,7 @@ createTagBody(2, {->
 printHtmlPart(11)
 invokeTag('textArea','g',24,['id':("postContent"),'name':("content"),'rows':("3"),'cols':("50")],-1)
 printHtmlPart(12)
-invokeTag('submitButton','g',26,['name':("post"),'value':("Tweet O_0")],-1)
+invokeTag('submitButton','g',26,['name':("post"),'value':("Tweet O_0"),'class':("button")],-1)
 printHtmlPart(13)
 })
 invokeTag('form','g',27,['action':("addPost"),'id':(user.username)],2)
@@ -73,7 +73,7 @@ protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1459046346000L
+public static final long LAST_MODIFIED = 1459559039000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'

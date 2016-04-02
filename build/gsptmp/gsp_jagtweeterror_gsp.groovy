@@ -6,7 +6,7 @@ import org.grails.taglib.GrailsTagException
 import org.springframework.web.util.*
 import grails.util.GrailsUtil
 
-class gsp_jagtweeterror_gsp extends GroovyPage {
+class gsp_jagTweeterror_gsp extends GroovyPage {
 public String getGroovyPageFileName() { "/WEB-INF/grails-app/views/error.gsp" }
 public Object run() {
 Writer out = getOut()
@@ -63,19 +63,39 @@ printHtmlPart(10)
 printHtmlPart(1)
 }
 else {
-printHtmlPart(11)
+printHtmlPart(5)
+if(true && (Throwable.isInstance(exception))) {
+printHtmlPart(6)
+invokeTag('renderException','g',27,['exception':(exception)],-1)
+printHtmlPart(5)
+}
+else if(true && (request.getAttribute('javax.servlet.error.exception'))) {
+printHtmlPart(6)
+invokeTag('renderException','g',30,['exception':(request.getAttribute('javax.servlet.error.exception'))],-1)
+printHtmlPart(5)
+}
+else {
+printHtmlPart(7)
+expressionOut.print(exception)
+printHtmlPart(8)
+expressionOut.print(message)
+printHtmlPart(9)
+expressionOut.print(path)
+printHtmlPart(10)
+}
+printHtmlPart(1)
 }
 printHtmlPart(4)
 })
-invokeTag('captureBody','sitemesh',30,[:],1)
-printHtmlPart(12)
+invokeTag('captureBody','sitemesh',41,[:],1)
+printHtmlPart(11)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1459013392000L
+public static final long LAST_MODIFIED = 1459561571000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'

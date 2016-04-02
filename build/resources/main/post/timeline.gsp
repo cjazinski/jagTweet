@@ -23,7 +23,7 @@
 			<g:form action="addPost" id="${user.username}">
 				<g:textArea id="postContent" name="content" rows="3" cols="50" />
 				<br />
-				<g:submitButton name="post" value="Tweet O_0" />
+				<g:submitButton name="post" value="Tweet O_0" class="button" />
 			</g:form>
 		</p>
 	</div>

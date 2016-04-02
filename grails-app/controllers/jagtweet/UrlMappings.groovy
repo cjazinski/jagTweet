@@ -25,6 +25,10 @@ class UrlMappings {
             controller = "post"
             action = "personal"
         }
+        "/timeline/$id" {
+            controller = "post"
+            action = "timeline"
+        }
 
         //Named URL Mappings
         name chuck : "/timeline/chuck_norris" {
